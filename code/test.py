@@ -1,0 +1,22 @@
+'''
+Created on 14 Apr 2018
+
+@author: Angus
+'''
+
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
+
+import os
+
+def list_files(startpath):
+    for root, dirs, files in os.walk(startpath):
+        level = root.replace(startpath, '').count(os.sep)
+        indent = '+' + '-' * 4 * (level)
+        print('{}{}'.format(indent, os.path.basename(root)))
+        subindent = ' ' * 4 * (level + 1)
+        # for f in files:
+        #     print('{}{}'.format(subindent, f))
+            
+list_files("/Users/Angus/Projects/LearningQ")
