@@ -52,4 +52,4 @@ If you use LearningQ for a publication, please make reference to it by citing th
 }
 ```
 
-## To download the full dataset, please visit: https://dataverse.mpi-sws.org/dataverse/icwsm18
+## To download the full dataset, please visit: https://dataverse.mpi-sws.org/dataverse/icwsm18 or https://surfdrive.surf.nl/files/index.php/s/fmVNjwdauXMIdcr
