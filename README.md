@@ -1,4 +1,4 @@
-# Dataset and source code for [LearningQ: A Large-scale Dataset for Educational Question Generation](./LearningQ/ICWSM2018_LearningQ_preprint.pdf) (ICWSM 2018).
+# Dataset and source code for [LearningQ: A Large-scale Dataset for Educational Question Generation](./ICWSM2018_LearningQ_preprint.pdf) (ICWSM 2018).
 
 ## Please download the full dataset via [DATAVERSE](https://dataverse.mpi-sws.org/dataverse/icwsm18) or [SURFSARA](https://surfdrive.surf.nl/files/index.php/s/fmVNjwdauXMIdcr).
 
