@@ -42,8 +42,8 @@ We open-source not only i) the filtered data which can be directly used to train
 ## 3. Implementation of the Question Generators
 We implemented our question classifier as well as the question generators based on the following code repositories:
 * [Sentence Convolution Code in Torch](https://github.com/harvardnlp/sent-conv-torch)
-* [H&S comparison method](http://www.cs.cmu.edu/~ark/mheilman/questions/)
-* [Attention Seq2Seq](https://github.com/xinyadu/nqg)
+* [Question Generation via Overgenerating Transformations and Ranking](http://www.cs.cmu.edu/~ark/mheilman/questions/)
+* [Neural Question Generation](https://github.com/xinyadu/nqg)
 
 ## 4. Baseline Results
 |              |      Methods      | Bleu 1 | Bleu 2 | Bleu 3 | Bleu 4 | Meteor | Rouge_L |
