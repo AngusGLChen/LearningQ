@@ -1,6 +1,6 @@
 # Dataset and source code for [LearningQ: A Large-scale Dataset for Educational Question Generation](./ICWSM2018_LearningQ_preprint.pdf) (ICWSM 2018).
 
-<p align="center" width="100px"> 
+<p align="center" style="width:200px;"> 
 <img src="./LearningQ_Logo.png">
 </p>
 
