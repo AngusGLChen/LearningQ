@@ -1,4 +1,4 @@
-# Dataset and source code for LearningQ: A Large-scale Dataset for Educational Question Generation (ICWSM 2018).
+# Dataset and source code for [LearningQ: A Large-scale Dataset for Educational Question Generation](file://LearningQ/ICWSM2018_LearningQ_preprint.pdf) (ICWSM 2018).
 
 ## Please download the full dataset via [DATAVERSE](https://dataverse.mpi-sws.org/dataverse/icwsm18) or [SURFSARA](https://surfdrive.surf.nl/files/index.php/s/fmVNjwdauXMIdcr).
 
@@ -61,9 +61,9 @@ The best Bleu 4 score achieved by the state-of-the-art methods (i.e., Attention 
 For any questions about the dataset, please contact Guanliang Chen via angus.glchen@gmail.com or guanliang.chen@tudelft.nl
 
 ## 6. Citation
-If you use LearningQ for a publication, please make reference to it by citing the following paper:
+If you are using LearningQ in your work, please cite:
 ```
-@paper{ICWSM18Guanliang,
+@paper{ICWSM18LearningQ,
 	author = {Guanliang Chen, Jie Yang, Claudia Hauff and Geert-Jan Houben},
 	title = {LearningQ: A Large-scale Dataset for Educational Question Generation},
 	conference = {International AAAI Conference on Web and Social Media},
