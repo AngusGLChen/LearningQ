@@ -1,21 +1,10 @@
-# Dataset and source code for [LearningQ: A Large-scale Dataset for Educational Question Generation](./ICWSM2018_LearningQ_preprint.pdf) (ICWSM 2018).
+Dataset and source code for LearningQ: A Large-scale Dataset for Educational Question Generation (ICWSM 2018).
 
-<p align="center" height="50"> 
-<img src="./LearningQ_Logo.png">
-</p>
+1. How the Dataset was Collected
+LearningQ is a dataset which can be used for educational question generation. Specifically, it consists of i) 7K instructor-designed questions collected from TED-Ed and ii) 223K learner-generated questions collected from Khan Academy. The source documents (i.e., lecture videos and articles) from which the questions are generated are also presented. We include the crawling code as part of LearningQ.
 
-## Please download the full dataset via [DATAVERSE](https://dataverse.mpi-sws.org/dataverse/icwsm18) or [SURFSARA](https://surfdrive.surf.nl/files/index.php/s/wZZKDc0hAfRRzcf).
-
-## 1. How the Dataset was Collected
-LearningQ is a dataset which can be used for educational question generation. Specifically, it contains:
-
-* 7K instructor-designed questions collected from TED-Ed;
-* 223K learner-generated questions collected from Khan Academy.
-
-The source documents (i.e., lecture videos and articles) from which the questions are generated are also presented. We include the crawling code as part of LearningQ.
-
-## 2. Files in the Dataset
-We open-source not only i) the filtered data which can be directly used to train educational question generators but also ii) the originally-collected data from both TED-Ed and Khan Academy. The list of the data files is described as below.
+2. Files in the Dataset
+We open-source not only i) the filtered data which can be directly used to train educational question generators but also ii) the originally-collected data from both TED-Ed and Khan Academy. The list of the data files is described as below (the number embedded in #### represents the hierarchy order of the file/folder).
 
 ```
 + LearningQ
@@ -43,35 +32,23 @@ We open-source not only i) the filtered data which can be directly used to train
 +----+---- experiments [the filtered data (i.e., predicted useful learning questions) which can be directly used as input for question generators, each file is named as {para/src/tgt}_{train/dev/test}, which denotes its data type, i.e., source document (para), source sentences (src) and target questions (tgt), and its usage, i.e., whether it is used for training (train), validation (dev) or testing (test).]
 ```
 
-## 3. Implementation of the Question Generators
+3. Implementation of the Question Generators
 We implemented our question classifier as well as the question generators based on the following code repositories:
-* [Sentence Convolution Code in Torch](https://github.com/harvardnlp/sent-conv-torch)
-* [Question Generation via Overgenerating Transformations and Ranking](http://www.cs.cmu.edu/~ark/mheilman/questions/)
-* [Neural Question Generation](https://github.com/xinyadu/nqg)
+i) Sentence Convolution Code in Torch: https://github.com/harvardnlp/sent-conv-torch
+ii) H&S comparison method: http://www.cs.cmu.edu/~ark/mheilman/questions/
+iii) Attention Seq2Seq: https://github.com/xinyadu/nqg
 
-## 4. Baseline Results
-|              |      Methods      | Bleu 1 | Bleu 2 | Bleu 3 | Bleu 4 | Meteor | Rouge_L |
-|:------------:|:-----------------:|:------:|:------:|:------:|:------:|:------:|:-------:|
-| Khan Academy |        H&S        |  0.28  |  0.17  |  0.13  |  0.10  |  3.24  |   6.61  |
-|              |      Seq2Seq      |  19.84 |  7.68  |  4.02  |  2.29  |  6.44  |  23.11  |
-|              | Attention Seq2Seq |  24.70 |  11.68 |  6.36  |  3.63  |  8.73  |  27.36  |
-|    TED-Ed    |        H&S        |  0.38  |  0.22  |  0.17  |  0.15  |  3.00  |   6.52  |
-|              |      Seq2Seq      |  12.96 |  3.95  |  1.82  |  0.73  |  4.34  |  16.09  |
-|              | Attention Seq2Seq |  15.83 |  5.63  |  2.63  |  1.15  |  5.32  |  17.69  |
-
-The best Bleu 4 score achieved by the state-of-the-art methods (i.e., Attention Seq2Seq) on SQuAD is larger than 12, while on LearningQ it is less than 4, which indicates large space for improvement on educational question generation.
-
-## 5. Contact
+4. Contact
 For any questions about the dataset, please contact Guanliang Chen via angus.glchen@gmail.com or guanliang.chen@tudelft.nl
 
-## 6. Citation
-If you are using LearningQ in your work, please cite:
+5. Citation
+If you use LearningQ for a publication, please make reference to it by citing the following paper:
+
 ```
-@paper{ICWSM18LearningQ,
+@paper{ICWSM18Guanliang,
 	author = {Guanliang Chen, Jie Yang, Claudia Hauff and Geert-Jan Houben},
 	title = {LearningQ: A Large-scale Dataset for Educational Question Generation},
 	conference = {International AAAI Conference on Web and Social Media},
 	year = {2018}
 }
 ```
-
