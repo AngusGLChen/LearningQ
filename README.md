@@ -4,7 +4,7 @@
 <img src="./LearningQ_Logo.png">
 </p>
 
-## Please download the full dataset via [DATAVERSE](https://dataverse.mpi-sws.org/dataverse/icwsm18) or [SURFSARA](https://surfdrive.surf.nl/files/index.php/s/wZZKDc0hAfRRzcf).
+## Please download the full dataset via [DATAVERSE](https://dataverse.mpi-sws.org/dataverse/icwsm18) or [Google Drive](https://drive.google.com/file/d/1D9Qp6BB3prKYSKSM4B__Eo04cw-71JFt/view?usp=sharing).
 
 ## 1. How the Dataset was Collected
 LearningQ is a dataset which can be used for educational question generation. Specifically, it contains:
@@ -62,7 +62,7 @@ We implemented our question classifier as well as the question generators based 
 The best Bleu 4 score achieved by the state-of-the-art methods (i.e., Attention Seq2Seq) on SQuAD is larger than 12, while on LearningQ it is less than 4, which indicates large space for improvement on educational question generation.
 
 ## 5. Contact
-For any questions about the dataset, please contact Guanliang Chen via angus.glchen@gmail.com or guanliang.chen@tudelft.nl
+For any questions about the dataset, please contact Guanliang Chen via angus.glchen@gmail.com
 
 ## 6. Citation
 If you are using LearningQ in your work, please cite:
